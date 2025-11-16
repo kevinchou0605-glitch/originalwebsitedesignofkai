@@ -1,0 +1,292 @@
+body {
+  font-family: "Noto serif", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #272a2d;
+  color: #f6f6f6;
+}
+
+/* === header === */
+header {
+  background-color: #151b20;
+  color: rgb(229, 227, 227);
+  display: flex;
+  justify-content: space-between;
+  text-align: center; 
+  align-items: center;  
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* 左邊 Logo + 標題（水平排列） */
+.logo-box {
+  display: flex;
+  flex-direction: row;    /* 確保水平 */
+  align-items: center;    /* 讓文字與 logo 垂直置中 */
+  gap: 10px;              /* Logo 與標題的距離 */
+  margin-left: 25px
+}
+.logo-box img {
+  width: 65px;
+  height: auto;
+}
+
+
+/* === 導覽列 === */
+nav ul {
+  font-size: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+nav a {
+  background-color: #151b20;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 12px 20px;
+  font-style: oblique;
+  font-family:'Times New Roman', Times, serif
+
+}
+nav a:hover {
+  color: #8a742c;          /* 改文字顏色 */
+  font-size: 30px;
+  border: 2px solid #8c909d;  
+  border-radius: 5px;      /* 可加圓角 */
+  transition: 0.3s;        /* 平滑過渡 */
+}
+
+/* === 統一調整 === */
+
+img {                /* === 圖片 === */
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 15px auto;
+  display: block;
+} 
+
+
+#section2 ul,
+#section3 ul,
+#section4 ul {
+  font-size: 25px;
+  list-style: none;  /* 移除圓點 */
+  line-height: 2.0;
+  padding-left: 0;
+  text-align: center;
+}
+
+
+body {
+  background-image: url("logoline.png");
+  background-size:550px;     /* 讓背景撐滿畫面 */
+  background-position: 980px 100px;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-origin:padding-box;
+}
+
+main h2 {
+  /*background-color: #8a742c;*/
+  color:  #8a742c;
+  font-size: 45px;
+  text-shadow:1.3px 1.3px 0 rgba(255, 255, 255, 0.7);
+;
+  padding: 2px;
+  margin: 35px auto;
+  width: 20%;
+  text-align: center;
+  font-style: oblique;
+  font-family:'Times New Roman', Times, serif
+}
+
+.about{
+   /* background-color: rgba(255, 255, 255, 0.1);   半透明底色 */
+  padding: 20px;      /* 內距 */
+  border-radius: 10px; /* 圓角 */
+  width: 80%;         /* 框寬度 */
+  padding-left: 0;
+  margin-left: 0;     /* ← 改成靠左 */
+  margin-right: auto; /* ← 讓右邊自動延伸 */
+  text-align: left;   /* ← 標題文字靠左 */
+}
+
+main h3 {
+  font-size: 25px;
+  margin: 10px;
+  text-align: center;
+}
+
+.totop{
+  position: fixed;       /* 固定在畫面上，而不是跟著滑動 */
+  bottom: 20px;          /* 距離底部 20px */
+  right: 20px;           /* 距離右側 20px */
+  background-color: #151b20;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 999;          /* 永遠浮在最上層 */
+  transition: 0.3s;
+}
+
+.totop:hover{
+  background-color: #ffffff;
+  color: #151b20;
+}
+
+/* === 主內容區 === */
+
+#section1{
+  background-color: rgba(42, 52, 59, 0.7);
+  display: flex;
+  margin: 30px;  
+  justify-content: center;
+  align-items: center; 
+}
+
+.selfie{
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.selfintro{
+   text-align: left;
+   font-size: 25px;
+   margin-left: 60px;
+   line-height: 30px;
+   
+}
+
+#section2, #section3, #section4{
+  margin: 30px;  
+  justify-content: center;
+  align-items: center; 
+}
+
+
+#section5{
+  display: flex;
+  margin: 30px;  
+  flex-direction: column; /* 這行很重要 */
+  justify-content: center;
+  align-items: center; 
+}
+.box {
+  width: 500px;
+  height: 150px;
+  padding: 5px 10px;
+  /* border: 1px solid #aaa;*/
+  }
+
+.sectionbox{
+  border: 2px solid #8c909d;
+  border-radius: 5px;
+  padding: 15px;
+  width: auto;
+  margin:  auto;           /* 確保置中 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center;    /* 框內內容置中 */
+}
+
+.sectionbox ul :hover {
+  color: #8a742c;          /* 改文字顏色 */
+  font-size: 30px;
+  border: 2px solid #8c909d;  
+  padding: 10px;
+  border-radius: 5px;      /* 可加圓角 */
+  transition: 0.3s;        /* 平滑過渡 */
+}
+
+/* 讓 h2 在 section 內置中 */
+.section5 h2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+   align-items: center;   /* h2 置中 */
+  margin-bottom: 40px;
+}
+
+/* 左右兩欄 */
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.two-columns .left,
+.two-columns .right {
+  flex: 1;
+  text-align: center; /* 讓整個區塊置中 */
+}
+
+
+
+
+/* === footer === */
+footer {
+  background-color: #151b20;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  color: #f7f7f7;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;              /* icon 與文字距離 */
+  margin-bottom: 0px;
+}
+
+footer p {
+  margin-top: 0;
+}
+.contact img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* === 響應式（手機版） === */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    width: 150px;
+  }
+}
